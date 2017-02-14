@@ -28,12 +28,12 @@ public class LogEntry {
         try {
             formatTxt = new SimpleFormatter();
 
-            errorLog = new FileHandler("c:\\MyLogError.log");
+            errorLog = new FileHandler(System.getProperty("user.dir") + "/MyLogError.log");
             errorLog.setLevel(Level.WARNING);
             errorLog.setFormatter(formatTxt);
             logger.addHandler(errorLog);
 
-            allLog = new FileHandler("c:\\MyLogAll.log");
+            allLog = new FileHandler(System.getProperty("user.dir") + "/MyLogAll.log");
             allLog.setLevel(Level.ALL);
             allLog.setFormatter(formatTxt);
             logger.addHandler(allLog);
