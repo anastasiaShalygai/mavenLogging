@@ -28,12 +28,12 @@ public class LogEntry {
         try {
             formatTxt = new SimpleFormatter();
 
-            errorLog = new FileHandler("D:/andersen/Automation/Java/Project/MavenLogging/MyLogError.log");
+            errorLog = new FileHandler("c:\\MyLogError.log");
             errorLog.setLevel(Level.WARNING);
             errorLog.setFormatter(formatTxt);
             logger.addHandler(errorLog);
 
-            allLog = new FileHandler("D:/andersen/Automation/Java/Project/MavenLogging/MyLogAll.log");
+            allLog = new FileHandler("c:\\MyLogAll.log");
             allLog.setLevel(Level.ALL);
             allLog.setFormatter(formatTxt);
             logger.addHandler(allLog);
