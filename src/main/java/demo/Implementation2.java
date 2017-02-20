@@ -20,9 +20,9 @@ public class Implementation2 {
     static void entryStart() {
         logger.addHandler(LogEntry.allLog);
 
-        System.out.println("Уровень логирования(ERROR, WARN, INFO, DEBUG, TRACE):");
+        /*System.out.println("Уровень логирования(ERROR, WARN, INFO, DEBUG, TRACE):");
         loggingLevel = ScanManager.consoleReadString();
-        selectLoggingLevel();
+        selectLoggingLevel();*/
 
         initialization();
     }
@@ -71,6 +71,5 @@ public class Implementation2 {
             default: return;
         }
         System.out.println("Результат: " + result);
-        initialization();
     }
 }
